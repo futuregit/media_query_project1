@@ -19,6 +19,7 @@ body {
     /* margin: 100px; */
     display: grid;
     place-content: center;
+    background-color: #999EAD;
 }
 
 .text {
@@ -27,10 +28,77 @@ body {
 }
 
 #size {
-    border: 4px solid red;
+    border: 4px solid rgb(0, 255, 149);
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 35px;
+    color: red;
 }
+
+/* mobile: 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        background-color: black;
+    }
+     
+}
+
+/* tablet: 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        /* background-color: black; */
+    }
+     
+}
+
+/* laptop: 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        /* background-color: black; */
+    }
+     
+}
+
+/* desktop: 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        /* background-color: black; */
+    }
+     
+}
+
+/* List of common breakpoints
+1920×1080
+1366×768
+360×640
+414×896
+1536×864
+375×667
+
+Bootstrap breakpoints
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+
+Another recommendation for 4 devices:
+mobile: 576px
+tablet: 768px
+laptop: 992px
+desktop: 1200px
+*/
