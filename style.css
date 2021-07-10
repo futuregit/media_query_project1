@@ -37,37 +37,42 @@ body {
     color: red;
 }
 
+/* Order of media queries should be evaulated from largest to smallest */
+
+/* desktop: 1200px */
+@media (max-width: 1200px) {
+    .container {
+        background-color: rgb(30, 130, 133);
+    }
+     
+}
+
+
+/* laptop: 992px */
+@media (max-width: 992px) {
+    .container {
+        background-color: rgb(145, 150, 163);
+    }
+     
+}
+
+
+/* tablet: 768px */
+@media (max-width: 768px) {
+    .container {
+        background-color: rgb(161, 149, 160);
+    }
+     
+}
+
 /* mobile: 576px */
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
     .container {
         background-color: black;
     }
      
 }
 
-/* tablet: 768px */
-@media screen and (max-width: 768px) {
-    .container {
-        /* background-color: black; */
-    }
-     
-}
-
-/* laptop: 992px */
-@media screen and (max-width: 992px) {
-    .container {
-        /* background-color: black; */
-    }
-     
-}
-
-/* desktop: 1200px */
-@media screen and (max-width: 1200px) {
-    .container {
-        /* background-color: black; */
-    }
-     
-}
 
 /* List of common breakpoints
 1920×1080
